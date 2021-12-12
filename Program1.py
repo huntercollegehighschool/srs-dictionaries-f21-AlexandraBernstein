@@ -16,4 +16,9 @@ charcount("The thing.")
 '''
 
 def charcount(message):
-  pass  # delete this line when you start writing your code
+  dictionary = {}
+  lowercase = message.lower()
+  for letter in lowercase:
+    dictionary.setdefault(letter, 0)
+    dictionary[letter] += 1
+  return dictionary

@@ -13,4 +13,10 @@ exponents(3)
 '''
 
 def exponents(exp): #do not change this line
-  pass #delete this line when you start writing your code
+  dictionary = {}
+  exp = int(exp)
+  for i in range(2, 12):
+    dictionary[i] = i**exp
+  return dictionary
+  
+  
